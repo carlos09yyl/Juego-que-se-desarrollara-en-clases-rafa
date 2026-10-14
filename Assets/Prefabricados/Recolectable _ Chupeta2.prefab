@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7336443627062531296}
   - component: {fileID: 6866843582725842216}
+  - component: {fileID: 3429832473554815930}
+  - component: {fileID: 5123784389985026712}
   m_Layer: 0
   m_Name: Recolectable _ Chupeta2
   m_TagString: Untagged
@@ -92,3 +94,56 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!58 &3429832473554815930
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3450922349478994090}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 1.8362564
+--- !u!114 &5123784389985026712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3450922349478994090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4833ee827877feb46911bf0771420d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RecolectableChupeta1_Controlador
+  SonidoOcio: {fileID: 0}
+  SonidoRecolectado: {fileID: 0}
+  contador: {fileID: 0}
+  particulas: {fileID: 2173299242794691258, guid: c4f1adc082e96814a80b394b912047d8, type: 3}
+  colorParticulas: {r: 1, g: 0.25, b: 0.45, a: 1}

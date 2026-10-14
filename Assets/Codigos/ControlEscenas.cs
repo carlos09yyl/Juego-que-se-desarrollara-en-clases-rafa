@@ -17,4 +17,13 @@ public class ControlEscenas : MonoBehaviour
     {
         SceneManager.LoadScene("nivel");
     }
+
+    public void SalirDelJuego()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;    // dentro de Unity detiene el modo Play
+#else
+        Application.Quit();                                 // en el juego exportado lo cierra
+#endif
+    }
 }
